@@ -136,6 +136,7 @@ body .headline .logsign {
 body .headline .logsign .btn {
   padding: 1.2rem 5rem;
   background-color: #FF9500;
+  background-image: linear-gradient(#FF9500, #FFC500);
   line-height: 1.2rem;
   color: black;
   border: 1px solid #FF9500;
@@ -145,6 +146,7 @@ body .headline .logsign .btn {
 }
 body .headline .logsign .btn:hover {
   background-color: #FFA500;
+  background-image: linear-gradient(#FFC500, #FFF500);
   color: black;
   border: 1px solid #FFA500;
 }
@@ -224,12 +226,14 @@ body .hexchefs .blurb {
 }
 @media screen and (max-width: 800px) {
   body .hexchefs .blurb {
+    margin-top: -2.5rem;
     width: 50%;
   }
 }
 @media screen and (max-width: 500px) {
   body .hexchefs .blurb {
     width: 100%;
+    margin-top: 1rem;
   }
 }
 body .hexchefs .blurb li {

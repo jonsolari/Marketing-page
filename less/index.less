@@ -109,6 +109,7 @@ header{
         .btn{
             padding: 1.2rem 5rem;
             background-color: #FF9500;
+            background-image: linear-gradient(#FF9500,#FFC500);
             line-height: 1.2rem;
             color:black;
             border: 1px solid #FF9500;
@@ -117,6 +118,7 @@ header{
             text-decoration: none;
             &:hover{
             background-color: #FFA500;
+            background-image: linear-gradient(#FFC500,#FFF500);
             color:black;
             border: 1px solid #FFA500;
             }
@@ -214,10 +216,12 @@ header{
         align-items: center;
         margin-bottom: 2em;
         @media @tablet{
+            margin-top: -2.5rem;
             width: 50%;
         }
         @media @phone{
             width: 100%;
+            margin-top: 1rem;
         }
     
         li{
