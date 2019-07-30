@@ -135,7 +135,6 @@ body .headline .logsign {
 }
 body .headline .logsign .btn {
   padding: 1.2rem 5rem;
-  background-color: #FF9500;
   background-image: linear-gradient(#FF9500, #FFC500);
   line-height: 1.2rem;
   color: black;
@@ -145,9 +144,7 @@ body .headline .logsign .btn {
   text-decoration: none;
 }
 body .headline .logsign .btn:hover {
-  background-color: #FFA500;
   background-image: linear-gradient(#FFC500, #FFF500);
-  color: black;
   border: 1px solid #FFA500;
 }
 body .headline .logsign .nobtn {
@@ -158,6 +155,7 @@ body .headline .logsign .nobtn {
 }
 body .headline .logsign .nobtn:hover {
   color: white;
+  text-decoration: underline;
 }
 body .lorem {
   margin-top: 4rem;
@@ -253,6 +251,7 @@ body .hexchefs .blurb li {
 body .hexchefs .blurb li:hover {
   opacity: 1;
   filter: saturate(1.3);
+  filter: hue-rotate(9deg);
 }
 body .hexchefs .blurb li .hex {
   position: absolute;
