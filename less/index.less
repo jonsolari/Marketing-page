@@ -197,14 +197,29 @@ header{
     }
 
 .hexchefs{
-    display: flex;
+    margin-top: 4rem;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: baseline;
     .blurb{
-        width: 100%;
+        width: 33%;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        margin-bottom: 4em;
+        @media @tablet{
+            width: 50%;
+        }
+        @media @phone{
+            width: 100%;
+        }
+    
         li{
             list-style-type: none;
             position: relative;
-            width: 27.85714285714286%;
-            padding: 0 0 32.16760145166612% 0;
+            width: 80%;
+            padding: 0 0 92% 0;
             -o-transform: rotate(-60deg) skewY(30deg);
             -moz-transform: rotate(-60deg) skewY(30deg);
             -webkit-transform: rotate(-60deg) skewY(30deg);
@@ -227,10 +242,10 @@ header{
                 overflow: hidden;
                 visibility: visible;
                 #chef1{
-                    max-width:110%;
+                    max-width:200%;
                 }
                 #chef2{
-                    max-width:120%;
+                    max-width:150%;
                 }
                 #chef3{
                     max-width:120%;
@@ -238,14 +253,16 @@ header{
             }
         }
         h3{
-            display:block;
             color: white;
-            font-size: 2.4rem;
+            font-size: 3.4rem;
         }
         p{
             font-family: 'Merriweather', serif;
             font-size: 1.8rem;
             margin-right: 10%;
+            @media @tablet{
+                margin: 0 3%;
+            }
         }
     }
 }
