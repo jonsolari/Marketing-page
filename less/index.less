@@ -8,7 +8,7 @@
 
 body{
     background-color: #0D132B;
-    margin: 0 20%;
+    margin: 0 19%;
     @media @tablet{
         margin: 0 10%;
     }
@@ -45,6 +45,7 @@ header{
         nav{
         margin-left: 40%;
         margin-right: 10%;
+        margin-bottom: 5rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -62,6 +63,9 @@ header{
                 font-size: 1.6rem;
                 text-decoration: none;
                 color: white;
+                &:hover{
+                    color: lightblue;
+                }
                 @media @phone{
                     width: 100%;
                     font-size: 2rem;
@@ -73,7 +77,8 @@ header{
     }
 .headline{
         display:flex;
-        justify-content: space-between;
+        justify-content: baseline;
+        flex-direction: row;
         flex-wrap: wrap;
         margin-top: 3rem;
         h1{
@@ -92,7 +97,44 @@ header{
                 width: 100%;
             }
         }
-        h2{
+
+      .logsign{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        margin: auto;
+
+        .btn{
+            padding: 1.2rem 5rem;
+            background-color: #FF9500;
+            line-height: 1.2rem;
+            color:black;
+            border: 1px solid #FF9500;
+            border-radius: 12px;
+            font-size: 2rem;
+            text-decoration: none;
+            &:hover{
+            background-color: #FFA500;
+            color:black;
+            border: 1px solid #FFA500;
+            }
+        }
+
+        .nobtn{
+            text-decoration: none;
+            color:lightgrey;
+            &:hover{
+                color:white;
+            }
+            font-size: 1rem;
+            margin-top: .7rem;
+        }
+    }
+
+
+        /* h2{
             font-family: 'Roboto', sans-serif;
             font-weight: bold;
             font-size: 3.6rem;
@@ -107,8 +149,13 @@ header{
                 display: block;
                 width: 100%;
             }
-        }
+        } */
     }
+    .lorem{        
+        margin-top: 4rem;
+        margin-right: 1.5rem;
+        font-family: Nunito, sans-serif;
+        }
 
 .pics{
         margin-top: 3rem;
@@ -184,8 +231,10 @@ footer{
     }
     div{
         background-color:white;
-        margin: 0 1rem  1rem 0;
-        margin: 3rem;
+        margin: 1.2rem;
+        @media @phone{
+            margin: 2rem auto;
+        }
     }
     p{
         font-size: 1.2rem;
@@ -197,6 +246,14 @@ footer{
     }
 }
  
+
+
+
+
+
+}//closes body
+
+/*
 .us{
     
     h1{
@@ -243,12 +300,6 @@ footer{
 }
 
 
-
-
-}//closes body
-
-
-/*
 font-family: 'Nunito', sans-serif;
 font-family: 'Merriweather', serif;
 font-family: 'Roboto', sans-serif;
