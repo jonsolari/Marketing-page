@@ -151,7 +151,7 @@ header{
             }
         } */
     }
-    .lorem{        
+.lorem{        
         margin-top: 4rem;
         margin-right: 1.5rem;
         font-family: Nunito, sans-serif;
@@ -195,6 +195,60 @@ header{
             }
         }
     }
+
+.hexchefs{
+    display: flex;
+    .blurb{
+        width: 100%;
+        li{
+            list-style-type: none;
+            position: relative;
+            width: 27.85714285714286%;
+            padding: 0 0 32.16760145166612% 0;
+            -o-transform: rotate(-60deg) skewY(30deg);
+            -moz-transform: rotate(-60deg) skewY(30deg);
+            -webkit-transform: rotate(-60deg) skewY(30deg);
+            -ms-transform: rotate(-60deg) skewY(30deg);
+            transform: rotate(-60deg) skewY(30deg);
+            overflow:hidden;
+            visibility:hidden;
+            .hex{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: white;
+                -o-transform: skewY(-30deg) rotate(60deg);
+                -moz-transform: skewY(-30deg) rotate(60deg);
+                -webkit-transform: skewY(-30deg) rotate(60deg);
+                -ms-transform: skewY(-30deg) rotate(60deg);
+                transform: skewY(-30deg) rotate(60deg);
+                overflow: hidden;
+                visibility: visible;
+                #chef1{
+                    max-width:110%;
+                }
+                #chef2{
+                    max-width:120%;
+                }
+                #chef3{
+                    max-width:120%;
+                }
+            }
+        }
+        h3{
+            display:block;
+            color: white;
+            font-size: 2.4rem;
+        }
+        p{
+            font-family: 'Merriweather', serif;
+            font-size: 1.8rem;
+            margin-right: 10%;
+        }
+    }
+}
 
 footer{
         background-color: #222222;
