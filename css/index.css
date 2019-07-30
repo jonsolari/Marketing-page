@@ -71,6 +71,9 @@ body .navigation nav a {
   text-decoration: none;
   color: white;
 }
+body .navigation nav a:hover {
+  color: lightblue;
+}
 @media screen and (max-width: 500px) {
   body .navigation nav a {
     width: 100%;
@@ -81,9 +84,25 @@ body .navigation nav a {
 }
 body .headline {
   display: flex;
-  justify-content: space-between;
+  justify-content: baseline;
   flex-wrap: wrap;
   margin-top: 3rem;
+  /* h2{
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            font-size: 3.6rem;
+            color:white;
+            width: 50%;
+            text-align: center;
+            @media @tablet{
+                display: block;
+                width: 100%;
+            }
+            @media @phone{
+                display: block;
+                width: 100%;
+            }
+        } */
 }
 body .headline h1 {
   font-family: 'Merriweather', serif;
@@ -105,25 +124,37 @@ body .headline h1 {
     width: 100%;
   }
 }
-body .headline h2 {
+body .headline .logsign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  font-size: 3.6rem;
+  margin: auto;
+}
+body .headline .logsign .btn {
+  padding: 1.2rem;
+  background-color: #FF9500;
+  line-height: 1.2rem;
+  color: black;
+  border: 1px solid #FF9500;
+  border-radius: 12px;
+  font-size: 2rem;
+  text-decoration: none;
+}
+body .headline .logsign .btn:hover {
+  background-color: #FFA500;
+  color: black;
+  border: 1px solid #FFA500;
+}
+body .headline .logsign .nobtn {
+  text-decoration: none;
+  color: lightgrey;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+body .headline .logsign .nobtn:hover {
   color: white;
-  width: 50%;
-  text-align: center;
-}
-@media screen and (max-width: 800px) {
-  body .headline h2 {
-    display: block;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 500px) {
-  body .headline h2 {
-    display: block;
-    width: 100%;
-  }
 }
 body .pics {
   margin-top: 3rem;
@@ -203,6 +234,11 @@ body .us2 img:hover {
 body .us2 div {
   background-color: white;
   margin: 1.2rem;
+}
+@media screen and (max-width: 500px) {
+  body .us2 div {
+    margin: 2rem auto;
+  }
 }
 body .us2 p {
   font-size: 1.2rem;
