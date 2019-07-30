@@ -15,7 +15,7 @@ body{
     @media @phone{
         margin: 0 4%;
     }
-p{
+    p{
         color: white;
         font-size: 1.8rem;
         @media @phone{
@@ -172,6 +172,10 @@ header{
         img{
             max-width: 30%;
             object-fit: cover;
+            transition: transform .5s;
+            &:hover{
+                transform: scale(1.1);
+            }
             @media @tablet{
                 max-width: 100%;
                 width: 100%;
@@ -207,7 +211,7 @@ header{
         display:flex;
         flex-direction:column;
         align-items: center;
-        margin-bottom: 4em;
+        margin-bottom: 2em;
         @media @tablet{
             width: 50%;
         }
@@ -227,6 +231,10 @@ header{
             transform: rotate(-60deg) skewY(30deg);
             overflow:hidden;
             visibility:hidden;
+            opacity: .8;
+            &:hover{
+                opacity:1;
+            }
             .hex{
                 position: absolute;
                 top: 0;
@@ -262,6 +270,10 @@ header{
             margin-right: 10%;
             @media @tablet{
                 margin: 0 3%;
+            }
+            em{
+                font-weight: bold;
+                font-size: 1.6rem;
             }
         }
     }

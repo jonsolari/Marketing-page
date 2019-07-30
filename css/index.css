@@ -177,6 +177,10 @@ body .pics {
 body .pics img {
   max-width: 30%;
   object-fit: cover;
+  transition: transform 0.5s;
+}
+body .pics img:hover {
+  transform: scale(1.1);
 }
 @media screen and (max-width: 800px) {
   body .pics img {
@@ -215,7 +219,7 @@ body .hexchefs .blurb {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 4em;
+  margin-bottom: 2em;
 }
 @media screen and (max-width: 800px) {
   body .hexchefs .blurb {
@@ -239,6 +243,10 @@ body .hexchefs .blurb li {
   transform: rotate(-60deg) skewY(30deg);
   overflow: hidden;
   visibility: hidden;
+  opacity: 0.8;
+}
+body .hexchefs .blurb li:hover {
+  opacity: 1;
 }
 body .hexchefs .blurb li .hex {
   position: absolute;
@@ -277,6 +285,10 @@ body .hexchefs .blurb p {
   body .hexchefs .blurb p {
     margin: 0 3%;
   }
+}
+body .hexchefs .blurb p em {
+  font-weight: bold;
+  font-size: 1.6rem;
 }
 body footer {
   background-color: #222222;
