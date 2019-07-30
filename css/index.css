@@ -181,6 +181,7 @@ body .pics img {
 }
 body .pics img:hover {
   transform: scale(1.1);
+  filter: saturate(1.1);
 }
 @media screen and (max-width: 800px) {
   body .pics img {
@@ -247,6 +248,7 @@ body .hexchefs .blurb li {
 }
 body .hexchefs .blurb li:hover {
   opacity: 1;
+  filter: saturate(1.3);
 }
 body .hexchefs .blurb li .hex {
   position: absolute;
@@ -320,9 +322,11 @@ body .us2 img {
   height: 30rem;
   object-fit: cover;
   opacity: 0.9;
+  transition: transform 0.5s;
 }
 body .us2 img:hover {
   opacity: 1;
+  transform: scale(1.05);
 }
 body .us2 div {
   background-color: white;
