@@ -41,7 +41,7 @@ body h1 {
   text-align: center;
   letter-spacing: 2px;
 }
-body header h3 {
+header h3 {
   font-family: Nunito, sans-serif;
   font-weight: bold;
   font-size: 1.8rem;
@@ -53,14 +53,14 @@ body header h3 {
   color: black;
 }
 @media screen and (max-width: 500px) {
-  body header h3 {
+  header h3 {
     text-align: center;
     font-size: 3rem;
     padding: 0 0 0.5rem 0;
     margin: 0;
   }
 }
-body .navigation nav {
+.navigation nav {
   margin-left: 40%;
   margin-right: 10%;
   margin-bottom: 5rem;
@@ -69,58 +69,66 @@ body .navigation nav {
   justify-content: space-between;
 }
 @media screen and (max-width: 800px) {
-  body .navigation nav {
+  .navigation nav {
     margin: 0 5%;
     padding-top: 0.5rem;
   }
 }
 @media screen and (max-width: 500px) {
-  body .navigation nav {
+  .navigation nav {
     margin: 0 5%;
     padding-top: 0.5rem;
   }
 }
-body .navigation nav a {
+.navigation nav a {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 1.6rem;
   text-decoration: none;
   color: white;
 }
-body .navigation nav a:hover {
+.navigation nav a:hover {
   color: lightblue;
 }
 @media screen and (max-width: 500px) {
-  body .navigation nav a {
+  .navigation nav a {
     width: 100%;
     font-size: 2rem;
     text-align: center;
     padding: 0.3rem 0;
   }
 }
-body .headline {
+.toptext h1 {
+  display: block;
+  text-align: left;
+  margin-left: 1.5rem;
+}
+.toptext p {
+  margin-left: 1.5rem;
+}
+.headline {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
   /* h2{
-            font-family: 'Roboto', sans-serif;
-            font-weight: bold;
-            font-size: 3.6rem;
-            color:white;
-            width: 50%;
-            text-align: center;
-            @media @tablet{
-                display: block;
-                width: 100%;
-            }
-            @media @phone{
-                display: block;
-                width: 100%;
-            }
-        } */
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 3.6rem;
+        color:white;
+        width: 50%;
+        text-align: center;
+        @media @tablet{
+            display: block;
+            width: 100%;
+        }
+        @media @phone{
+            display: block;
+            width: 100%;
+        }
+    } */
 }
-body .headline h1 {
+.headline h1 {
   font-family: 'Merriweather', serif;
   font-size: 3.6rem;
   font-weight: bold;
@@ -130,18 +138,18 @@ body .headline h1 {
   margin-left: 2rem;
 }
 @media screen and (max-width: 800px) {
-  body .headline h1 {
+  .headline h1 {
     display: block;
     width: 100%;
   }
 }
 @media screen and (max-width: 500px) {
-  body .headline h1 {
+  .headline h1 {
     display: block;
     width: 100%;
   }
 }
-body .headline .logsign {
+.headline .logsign {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -149,7 +157,7 @@ body .headline .logsign {
   font-weight: bold;
   margin: 3.5rem auto;
 }
-body .headline .logsign .btn {
+.headline .logsign .btn {
   padding: 1.5rem 5rem;
   background-image: linear-gradient(#FF9500, #FFC500);
   line-height: 1.2rem;
@@ -159,50 +167,50 @@ body .headline .logsign .btn {
   font-size: 2.5rem;
   text-decoration: none;
 }
-body .headline .logsign .btn:hover {
+.headline .logsign .btn:hover {
   background-image: linear-gradient(#FFC500, #FFF500);
   border: 1px solid white;
   animation: ripple 1s infinite;
 }
-body .headline .logsign .nobtn {
+.headline .logsign .nobtn {
   text-decoration: none;
   color: lightgrey;
   font-size: 1.5rem;
   margin-top: 0.7rem;
 }
-body .headline .logsign .nobtn:hover {
+.headline .logsign .nobtn:hover {
   color: white;
   text-decoration: underline;
 }
-body .lorem {
+.lorem {
   margin-top: 4rem;
   margin-right: 1.5rem;
   margin-bottom: 4rem;
   font-family: Nunito, sans-serif;
 }
-body .pics {
+.pics {
   margin-top: 3rem;
   display: flex;
   justify-content: space-between;
 }
 @media screen and (max-width: 800px) {
-  body .pics {
+  .pics {
     flex-direction: column-reverse;
     flex-wrap: wrap;
     max-width: 100%;
   }
 }
-body .pics img {
+.pics img {
   max-width: 30%;
   object-fit: cover;
   transition: transform 0.5s;
 }
-body .pics img:hover {
+.pics img:hover {
   filter: saturate(1.1);
   filter: brightness(105%);
 }
 @media screen and (max-width: 800px) {
-  body .pics img {
+  .pics img {
     max-width: 100%;
     width: 100%;
     margin: 1rem 0;
@@ -210,30 +218,30 @@ body .pics img:hover {
   }
 }
 @media screen and (max-width: 500px) {
-  body .pics img {
+  .pics img {
     max-width: 100%;
     margin: 1rem 0;
     border-radius: 5px;
   }
 }
 @media screen and (max-width: 800px) {
-  body .pics #chefimg {
+  .pics #chefimg {
     display: none;
   }
 }
 @media screen and (max-width: 500px) {
-  body .pics #chefimg {
+  .pics #chefimg {
     display: none;
   }
 }
-body .hexchefs {
+.hexchefs {
   margin-top: 4rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: baseline;
 }
-body .hexchefs .blurb {
+.hexchefs .blurb {
   width: 33%;
   display: flex;
   flex-direction: column;
@@ -241,18 +249,18 @@ body .hexchefs .blurb {
   margin-bottom: 2em;
 }
 @media screen and (max-width: 800px) {
-  body .hexchefs .blurb {
+  .hexchefs .blurb {
     margin-top: -2.5rem;
     width: 50%;
   }
 }
 @media screen and (max-width: 500px) {
-  body .hexchefs .blurb {
+  .hexchefs .blurb {
     width: 100%;
     margin-top: 1rem;
   }
 }
-body .hexchefs .blurb li {
+.hexchefs .blurb li {
   list-style-type: none;
   position: relative;
   width: 80%;
@@ -266,11 +274,11 @@ body .hexchefs .blurb li {
   visibility: hidden;
   opacity: 0.8;
 }
-body .hexchefs .blurb li:hover {
+.hexchefs .blurb li:hover {
   opacity: 1;
   filter: brightness(105%);
 }
-body .hexchefs .blurb li .hex {
+.hexchefs .blurb li .hex {
   position: absolute;
   top: 0;
   left: 0;
@@ -285,34 +293,34 @@ body .hexchefs .blurb li .hex {
   overflow: hidden;
   visibility: visible;
 }
-body .hexchefs .blurb li .hex #chef1 {
+.hexchefs .blurb li .hex #chef1 {
   max-width: 200%;
 }
-body .hexchefs .blurb li .hex #chef2 {
+.hexchefs .blurb li .hex #chef2 {
   max-width: 150%;
 }
-body .hexchefs .blurb li .hex #chef3 {
+.hexchefs .blurb li .hex #chef3 {
   max-width: 120%;
 }
-body .hexchefs .blurb h3 {
+.hexchefs .blurb h3 {
   color: white;
   font-size: 3.4rem;
 }
-body .hexchefs .blurb p {
+.hexchefs .blurb p {
   font-family: 'Merriweather', serif;
   font-size: 1.8rem;
   margin: 1rem 13%;
 }
 @media screen and (max-width: 800px) {
-  body .hexchefs .blurb p {
+  .hexchefs .blurb p {
     margin: 0 3%;
   }
 }
-body .hexchefs .blurb p em {
+.hexchefs .blurb p em {
   font-weight: bold;
   font-size: 1.6rem;
 }
-body footer {
+footer {
   background-color: #222222;
   margin-top: 16rem;
   padding: 0 25%;
@@ -321,56 +329,48 @@ body footer {
   justify-content: space-between;
 }
 @media screen and (max-width: 500px) {
-  body footer {
+  footer {
     padding: 0 5%;
   }
 }
-body footer a {
+footer a {
   padding-top: 1rem;
   padding-bottom: 3rem;
   text-decoration: none;
   font-size: 1.4rem;
   color: white;
 }
-body .toptext h1 {
-  display: block;
-  text-align: left;
-  margin-left: 1.5rem;
-}
-body .toptext p {
-  margin-left: 1.5rem;
-}
-body .us2 {
+.us2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
-body .us2 img {
+.us2 img {
   width: 20rem;
   height: 30rem;
   object-fit: cover;
   opacity: 0.9;
   transition: transform 0.5s;
 }
-body .us2 img:hover {
+.us2 img:hover {
   opacity: 1;
   transform: scale(1.05);
 }
-body .us2 div {
+.us2 div {
   background-color: white;
   margin: 1.2rem;
 }
 @media screen and (max-width: 500px) {
-  body .us2 div {
+  .us2 div {
     margin: 2rem auto;
   }
 }
-body .us2 p {
+.us2 p {
   font-size: 1.2rem;
   padding: 0 1.5rem;
   color: black;
 }
-body .us2 strong {
+.us2 strong {
   font-weight: bold;
 }
 /*

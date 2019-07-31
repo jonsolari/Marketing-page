@@ -1,0 +1,141 @@
+header{
+    h3{
+        font-family: Nunito, sans-serif;
+        font-weight: bold;
+        font-size: 1.8rem;
+        margin-top: 0;
+        padding-top: 1em;
+        padding-left: 1em;
+        padding-bottom: 0.5em;
+        background-color: #E5E5E5;
+        color: black;
+        @media @phone{
+            text-align: center;
+            font-size: 3rem;
+            padding: 0 0 0.5rem 0;
+            margin: 0;
+        }
+    }
+}
+.navigation{
+    nav{
+    margin-left: 40%;
+    margin-right: 10%;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media @tablet{
+        margin: 0 5%;
+        padding-top: 0.5rem;
+    }
+    @media @phone{
+        margin: 0 5%;
+        padding-top: 0.5rem;
+    }
+        a{
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            font-size: 1.6rem;
+            text-decoration: none;
+            color: white;
+            &:hover{
+                color: lightblue;
+            }
+            @media @phone{
+                width: 100%;
+                font-size: 2rem;
+                text-align: center;
+                padding: 0.3rem 0;
+            }
+        }
+    }
+}
+
+.toptext{
+    h1{
+        display: block;
+        text-align: left;
+        margin-left: 1.5rem;
+    }
+    p{
+        margin-left: 1.5rem;
+    }
+}
+
+.headline{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    h1{
+        font-family: 'Merriweather', serif;
+        font-size: 3.6rem;
+        font-weight: bold;
+        color: white;
+        width: 50%;
+        text-align: center;
+        margin-left: 2rem;
+        @media @tablet{
+            display: block;
+            width: 100%;
+        }
+        @media @phone{
+            display: block;
+            width: 100%;
+        }
+    }
+
+  .logsign{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin: 3.5rem auto;
+    .btn{
+        padding: 1.5rem 5rem;
+        background-image: linear-gradient(#FF9500, #FFC500);
+        line-height: 1.2rem;
+        color:black;
+        border: 1px solid #FF9500;
+        border-radius: 18px;
+        font-size: 2.5rem;
+        text-decoration: none;
+        &:hover{
+        background-image: linear-gradient(#FFC500, #FFF500);
+        border: 1px solid white;  
+        animation: ripple 1s infinite;
+              }
+        }
+
+    .nobtn{
+        text-decoration: none;
+        color:lightgrey;
+        &:hover{
+            color:white;
+            text-decoration: underline;
+        }
+        font-size: 1.5rem;
+        margin-top: .7rem;
+    }
+}
+
+
+    /* h2{
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 3.6rem;
+        color:white;
+        width: 50%;
+        text-align: center;
+        @media @tablet{
+            display: block;
+            width: 100%;
+        }
+        @media @phone{
+            display: block;
+            width: 100%;
+        }
+    } */
+}
