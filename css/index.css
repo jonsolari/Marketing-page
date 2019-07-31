@@ -120,6 +120,7 @@ body .headline h1 {
   color: white;
   width: 50%;
   text-align: center;
+  margin-left: 2rem;
 }
 @media screen and (max-width: 800px) {
   body .headline h1 {
@@ -292,7 +293,7 @@ body .hexchefs .blurb h3 {
 body .hexchefs .blurb p {
   font-family: 'Merriweather', serif;
   font-size: 1.8rem;
-  margin-right: 10%;
+  margin: 1rem 13%;
 }
 @media screen and (max-width: 800px) {
   body .hexchefs .blurb p {
