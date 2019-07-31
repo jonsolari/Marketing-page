@@ -25,6 +25,14 @@ body p {
     font-size: 2.4rem;
   }
 }
+body h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 3.6rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  letter-spacing: 2px;
+}
 body header h3 {
   font-family: Nunito, sans-serif;
   font-weight: bold;
@@ -131,16 +139,16 @@ body .headline .logsign {
   align-items: center;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  margin: auto;
+  margin: 3.5rem auto;
 }
 body .headline .logsign .btn {
-  padding: 1.2rem 5rem;
+  padding: 1.5rem 5rem;
   background-image: linear-gradient(#FF9500, #FFC500);
   line-height: 1.2rem;
   color: black;
   border: 1px solid #FF9500;
-  border-radius: 12px;
-  font-size: 2rem;
+  border-radius: 18px;
+  font-size: 2.5rem;
   text-decoration: none;
 }
 body .headline .logsign .btn:hover {
@@ -150,7 +158,7 @@ body .headline .logsign .btn:hover {
 body .headline .logsign .nobtn {
   text-decoration: none;
   color: lightgrey;
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-top: 0.7rem;
 }
 body .headline .logsign .nobtn:hover {
@@ -160,6 +168,7 @@ body .headline .logsign .nobtn:hover {
 body .lorem {
   margin-top: 4rem;
   margin-right: 1.5rem;
+  margin-bottom: 4rem;
   font-family: Nunito, sans-serif;
 }
 body .pics {
@@ -180,8 +189,8 @@ body .pics img {
   transition: transform 0.5s;
 }
 body .pics img:hover {
-  transform: scale(1.1);
   filter: saturate(1.1);
+  filter: brightness(105%);
 }
 @media screen and (max-width: 800px) {
   body .pics img {
@@ -250,8 +259,7 @@ body .hexchefs .blurb li {
 }
 body .hexchefs .blurb li:hover {
   opacity: 1;
-  filter: saturate(1.3);
-  filter: hue-rotate(9deg);
+  filter: brightness(105%);
 }
 body .hexchefs .blurb li .hex {
   position: absolute;
@@ -314,6 +322,14 @@ body footer a {
   text-decoration: none;
   font-size: 1.4rem;
   color: white;
+}
+body .toptext h1 {
+  display: block;
+  text-align: left;
+  margin-left: 1.5rem;
+}
+body .toptext p {
+  margin-left: 1.5rem;
 }
 body .us2 {
   display: flex;
