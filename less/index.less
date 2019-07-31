@@ -6,6 +6,16 @@
 @phone: ~"screen and (max-width: 500px)";
 @tablet: ~"screen and (max-width: 800px)";
 
+@keyframes ripple
+{
+ 0% {
+    box-shadow: 0 0 0 0px rgba(153, 148, 0, 1);
+    }
+ 100% {
+    box-shadow: 0 0 0 16px rgba(0, 0, 0, 0);
+      }
+}
+
 body{
     background-color: #0D132B;
     margin: 0 19%;
@@ -85,10 +95,9 @@ header{
     }
 .headline{
         display:flex;
-        justify-content: baseline;
+        justify-content: space-between;
         flex-direction: row;
         flex-wrap: wrap;
-        margin-top: 3rem;
         h1{
             font-family: 'Merriweather', serif;
             font-size: 3.6rem;
@@ -116,7 +125,7 @@ header{
         margin: 3.5rem auto;
         .btn{
             padding: 1.5rem 5rem;
-            background-image: linear-gradient(#FF9500,#FFC500);
+            background-image: linear-gradient(#FF9500, #FFC500);
             line-height: 1.2rem;
             color:black;
             border: 1px solid #FF9500;
@@ -124,11 +133,11 @@ header{
             font-size: 2.5rem;
             text-decoration: none;
             &:hover{
-            background-image: linear-gradient(#FFC500,#FFF500);
-            border: 1px solid #FFA500;
+            background-image: linear-gradient(#FFC500, #FFF500);
+            border: 1px solid white;  
+            animation: ripple 1s infinite;
+                  }
             }
-            
-        }
 
         .nobtn{
             text-decoration: none;

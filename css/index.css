@@ -2,6 +2,14 @@
   box-sizing: border-box;
   font-size: 62.5%;
 }
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0px #999400;
+  }
+  100% {
+    box-shadow: 0 0 0 16px rgba(0, 0, 0, 0);
+  }
+}
 body {
   background-color: #0D132B;
   margin: 0 19%;
@@ -92,10 +100,9 @@ body .navigation nav a:hover {
 }
 body .headline {
   display: flex;
-  justify-content: baseline;
+  justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 3rem;
   /* h2{
             font-family: 'Roboto', sans-serif;
             font-weight: bold;
@@ -154,7 +161,8 @@ body .headline .logsign .btn {
 }
 body .headline .logsign .btn:hover {
   background-image: linear-gradient(#FFC500, #FFF500);
-  border: 1px solid #FFA500;
+  border: 1px solid white;
+  animation: ripple 1s infinite;
 }
 body .headline .logsign .nobtn {
   text-decoration: none;
