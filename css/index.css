@@ -41,19 +41,19 @@ body h1 {
   text-align: center;
   letter-spacing: 2px;
 }
-header h3 {
-  font-family: Nunito, sans-serif;
-  font-weight: bold;
-  font-size: 1.8rem;
+header {
+  display: block;
+  background-color: #E5E5E5;
+}
+header img {
   margin-top: 0;
   padding-top: 1em;
   padding-left: 1em;
   padding-bottom: 0.5em;
-  background-color: #E5E5E5;
   color: black;
 }
 @media screen and (max-width: 500px) {
-  header h3 {
+  header img {
     text-align: center;
     font-size: 3rem;
     padding: 0 0 0.5rem 0;
@@ -61,6 +61,7 @@ header h3 {
   }
 }
 .navigation nav {
+  margin-top: 1rem;
   margin-left: 40%;
   margin-right: 10%;
   margin-bottom: 5rem;
