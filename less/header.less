@@ -1,6 +1,10 @@
 header{
     display:block;
     background-color: #E5E5E5;
+    display:flex;
+    @media @phone{
+        justify-content: center;
+    }
     img{
         //font-family: Nunito, sans-serif;
         //font-weight: bold;
@@ -9,12 +13,8 @@ header{
         padding-top: 1em;
         padding-left: 1em;
         padding-bottom: 0.5em;
-        color: black;
         @media @phone{
-            text-align: center;
-            font-size: 3rem;
-            padding: 0 0 0.5rem 0;
-            margin: 0;
+            padding-bottom: .3rem;
         }
     }
 }
@@ -23,7 +23,7 @@ header{
     margin-top: 1rem;
     margin-left: 40%;
     margin-right: 10%;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -38,7 +38,7 @@ header{
         a{
             font-family: 'Roboto', sans-serif;
             font-weight: bold;
-            font-size: 1.6rem;
+            font-size: 1.2rem;
             text-decoration: none;
             color: white;
             &:hover{
@@ -46,7 +46,7 @@ header{
             }
             @media @phone{
                 width: 100%;
-                font-size: 2rem;
+                font-size: 1.4rem;
                 text-align: center;
                 padding: 0.3rem 0;
             }
@@ -54,33 +54,33 @@ header{
     }
 }
 
-.toptext{
-    h1{
-        display: block;
-        text-align: left;
-        margin-left: 1.5rem;
-    }
-    p{
-        margin-left: 1.5rem;
-    }
-}
-
 .headline{
     display:flex;
     justify-content: space-between;
+    align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-left: 2rem;
+    @media @tablet{
+        margin-left: 0;
+    }
+    @media @phone{
+        margin-left: 0;
+    }
     h1{
         font-family: 'Merriweather', serif;
-        font-size: 3.6rem;
+        font-size: 2.4rem;
         font-weight: bold;
         color: white;
         width: 50%;
         text-align: center;
-        margin-left: 2rem;
+        vertical-align: middle;
         @media @tablet{
             display: block;
             width: 100%;
+            margin-left: 0;
+            margin-top: 3rem;
+            margin-right: 0;
         }
         @media @phone{
             display: block;
@@ -95,6 +95,9 @@ header{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     margin: 3.5rem auto;
+    @media @tablet{
+    margin:   2.5rem auto;
+    }
     .btn{
         padding: 1.5rem 5rem;
         background-image: linear-gradient(#FF9500, #FFC500);
@@ -102,7 +105,7 @@ header{
         color:black;
         border: 1px solid #FF9500;
         border-radius: 18px;
-        font-size: 2.5rem;
+        font-size: 1.6rem;
         text-decoration: none;
         &:hover{
         background-image: linear-gradient(#FFC500, #FFF500);
@@ -118,7 +121,7 @@ header{
             color:white;
             text-decoration: underline;
         }
-        font-size: 1.5rem;
+        font-size: 1rem;
         margin-top: .7rem;
     }
 }
